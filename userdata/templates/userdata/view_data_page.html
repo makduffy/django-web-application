@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='EN-US'>
+<head>
+    <title>Display Data</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'userdata/css/styles.css' %}">
+</head>
+<body>
+    <h1>User Data</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Fruit Selection</th>
+        </tr>
+        <tr>
+            <td>{{ instance.name }}</td>
+            <td>{{ instance.email }}</td>
+            <td>{{ instance.phoneNo }}</td>
+            <td>{{ instance.fruit_selection }}</td>
+        </tr>
+    </table>
+</body>
+</html>
